@@ -22,7 +22,7 @@ export default function Ecosystem() {
         <div className="grid-eco">
           {apps.map(([icon, name]) => (
             <div className="eco-item" key={name}>
-              <img src={icon} alt="" />
+              <img src={import.meta.env.BASE_URL + icon.slice(1)} alt="" />
               <span className="eco-label">{name}</span>
             </div>
           ))}
@@ -31,7 +31,7 @@ export default function Ecosystem() {
 
       <section className="cta-section" id="insights">
         <div className="cta-banner">
-          <img src="/pisc/backgrnd_7.png" alt="" className="cta-bg" />
+          <img src={`${import.meta.env.BASE_URL}pisc/backgrnd_7.png`} alt="" className="cta-bg" />
           <div className="cta-content">
             <h2>Automate Everything. Achieve<br />Anything.</h2>
             <p>Join the next generation of smart enterprises that automate workflows, decisions, and growth - all powered by AI.</p>

@@ -16,7 +16,7 @@ export default function Steps() {
         {steps.map(([icon, number, title, text], index) => (
           <div className="step-node" key={title}>
             <div className="step-badge">
-              <img src={icon} alt="" />
+              <img src={import.meta.env.BASE_URL + icon.slice(1)} alt="" />
               <span>{number}</span>
             </div>
             <h4 className="step-title">{title}</h4>

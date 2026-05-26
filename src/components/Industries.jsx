@@ -15,7 +15,7 @@ export default function Industries() {
       <div className="grid-2">
         {industries.map(([icon, title, text]) => (
           <div className="industry-card" key={title}>
-            <img src={icon} alt="" />
+            <img src={import.meta.env.BASE_URL + icon.slice(1)} alt="" />
             <h3 className="card-title">{title}</h3>
             <p className="card-desc">{text}</p>
           </div>

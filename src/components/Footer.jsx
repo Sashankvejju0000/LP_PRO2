@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <a href="#">
-            <img src="/pisc/icon7_1.png" alt="Aionx Company logo" />
+            <img src={`${import.meta.env.BASE_URL}pisc/icon7_1.png`} alt="Aionx Company logo" />
           </a>
           <p className="footer-desc">Redefining automation with AI that learns, adapts, and grows.</p>
         </div>
@@ -21,7 +21,7 @@ export default function Footer() {
 
         <div>
           <h4 className="footer-title">Quick Contact</h4>
-          <img src="/pisc/icon7_2.png" alt="Contact badges" className="contact-badges" />
+          <img src={`${import.meta.env.BASE_URL}pisc/icon7_2.png`} alt="Contact badges" className="contact-badges" />
         </div>
       </div>
 

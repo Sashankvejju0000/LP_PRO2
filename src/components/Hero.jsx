@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-right">
-          <img src="/pisc/pic1_1.png" alt="Aionx AI brain visual" className="hero-visual" />
+          <img src={`${import.meta.env.BASE_URL}pisc/pic1_1.png`} alt="Aionx AI brain visual" className="hero-visual" />
         </div>
       </div>
     </section>

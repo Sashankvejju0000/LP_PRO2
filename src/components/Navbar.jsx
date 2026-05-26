@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className={`site-nav ${scrolled ? 'is-scrolled' : ''}`} id="navbar">
       <a href="#" className="brand">
-        <img src="/pisc/icon7_1.png" alt="Aionx Company logo" />
+        <img src={`${import.meta.env.BASE_URL}pisc/icon7_1.png`} alt="Aionx Company logo" />
       </a>
 
       <ul className="nav-links">
@@ -44,7 +44,7 @@ export default function Navbar() {
           <button className="sidebar-backdrop" aria-label="Close navigation" onClick={() => setMobileOpen(false)}></button>
           <aside className="mobile-sidebar" aria-label="Mobile navigation">
             <div className="sidebar-top">
-              <img src="/pisc/icon7_1.png" alt="Aionx Company logo" />
+              <img src={`${import.meta.env.BASE_URL}pisc/icon7_1.png`} alt="Aionx Company logo" />
               <button className="sidebar-close" aria-label="Close navigation" onClick={() => setMobileOpen(false)}>×</button>
             </div>
             <ul className="sidebar-links">
